@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tre-Treino?????</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        div#area {
+            font: normal 30pt arial;
+            background-color: white;
+            width: 500pt;
+            text-align: center;
+            height: 50pt;
+            line-height: 50pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agora, agora, oq fazer com essa folha em branco?</h1>
+    <h2>Vou começar tornado-a cinza</h2>
+    <h2>Mas eu preciso aumentar o meu jogo</h2>
+    <div>
+        <img id="hello" src="hello.png">
+    </div>
+    <div id="area" onmouseenter="entrar()" onmouseout="sair()">
+        <p>Pensanso no q colocar ak</p>
+    </div>
+        Vc é o criador dessa página? <input type="string" name="nome" id="identificar">
+        <input type="button" value="é vc?" onclick="verificar()">
+    <div id="resposta">É VC?</div>
+    <h1> acho q eu tô de boa de treino, vou ver mais videos </h1>
+    <h2>Não é estranho eu falar oq eu penso na MINHA PAGINA >:(</h2>
+    <script>
+        var a = window.document.getElementById("area")
+        function entrar() {
+            a.addEventListener("entrar",entrar)
+            a.style.background = 'red'
+        }
+        function sair() {
+            a.addEventListener("sair",sair)
+            a.style.background = 'white'
+        }
+        function verificar() {
+        var nome = window.document.getElementById("identificar")
+        var resposta = window.document.getElementById("resposta")
+        var descobrir = String(nome.value)
+        if (descobrir == "Heitor", "heitor") {
+            resposta.innerHTML = "É VC ^-^"
+        } else {
+            resposta.innerHTML = "Não é vc ;~;"
+        }
+    }
+    </script>
+</body>
+</html>

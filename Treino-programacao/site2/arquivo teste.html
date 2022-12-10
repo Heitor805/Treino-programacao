@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>página teste</title>
+    <style> body {
+        font: normal 15pt arial;
+        text-align: center;
+        background-color: rgb(221, 255, 229)
+    } section {
+        font: normal 12pt arial;
+        background-color: aliceblue;
+        border-radius: 30px;
+        padding: 5px;
+        text-align: center;
+        box-shadow: 3px 3px 10px black
+    }</style>
+</head>
+<body>
+    <section>
+        <h1>Pagina teste show o/</h1>
+        <h2>Adicione os valores para o calculo</h2>
+        <p>Adicione nome do produto: <input type="string" name="nome" id="nome"></p>
+        <p>Adicione quantidade do produto: <input type="number" name="amount" id="quantidade"></p>
+        <p>Adicione preço do produto: <input type="number" name="cost" id="preço"></p>
+        <input type='button' value="Calcular" onclick="clicar()">
+        <div id="asw"></div>
+    </section>
+        <h2>Você tb pode conferir a loja <a href="pagina top.html" ref="next">clicando ak</a></h2>
+    <script>
+        function clicar() {
+            var nome = document.getElementById('nome')
+            var qntd = document.getElementById('quantidade')
+            var preço = document.getElementById('preço')
+            var asw = document.getElementById('asw')
+            var nome1 = String(nome.value)
+            var qntd1 = Number(qntd.value)
+            var preço1 = Number(preço.value)
+            var desconto1 = 0
+            if (qntd1 < 10) {
+                desconto1 = (20/100)
+            } else if (qntd1 < 20) {
+                desconto1 = (25/100)
+            } else {
+                desconto1 = (30/100)
+            }
+            var total = preço1*qntd1
+            var totaldedesconto = total*desconto1
+            var totalfinal = total-totaldedesconto
+            asw.innerHTML = `o produto <strong>${nome1}</strong> estará pelo valor: <strong>R$${total}</strong> sem desconto, 
+            com desconto ficará por <strong>R$${totalfinal}</strong> e conseguirá <strong>R$${totaldedesconto}</strong> de desconto!`
+        }
+    </script>
+</body>
+</html>

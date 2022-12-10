@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Esse é meu site para treinamento~</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Essa é a primeira frase q estou escrevendo de livre e espontânea vontade</h1>
+    <h2>É mentira, estou sendo forçado a escrever isso, minha consciência está me atacando!</h2>
+    <h3>E essa página é PT/EN mesmo</h3>
+    <p>Parágrafo com informações vitais da página</p>
+    <section>
+        <p><strong>OH MY GOSH, OH MY GOSH, IT'S... A BOX :D</strong></p>
+    </section>
+    <p>Mas vc não vai acreditar no q vem a seguir:</p>
+    <section>
+        <div id="area" onclick="clicar()">
+            <p><strong>IT'S ANOTHER BOX! BUT THIS ONE CLICKABLE:</strong></p>
+        </div>
+        <script>
+            var a = window.document.getElementById('area')
+            a.addEventListener('click', clicar)
+            function clicar() {
+            a.innerText = 'Era pra ter gatinhos aqui mas vai ficar pra próxima ;-;'
+        }
+         </script>
+    </section>
+    <script src="script1.js"></script>
+</body>
+</html>
