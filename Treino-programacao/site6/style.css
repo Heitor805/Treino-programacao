@@ -13,7 +13,7 @@ header > a {
     text-decoration: none;
     color: black;
 }
-section {
+section#h1 {
     background-color: white;
     max-width: 500px;
     padding: 50px;
@@ -36,13 +36,43 @@ nav > a {
     padding: 8px;
     margin-left: 10px;
 }
-nav >a:hover {
-    background-color: rgb(41, 80, 255);
+nav > a:hover {
+    background-color: rgb(49, 185, 167);
     padding: 8px;
     border-radius: 8px;
 }
 main {
     background-color: lightgray;
+}
+article {
+    max-width: 90%;
+    background-color: white;
+    text-indent: 20px;
+    padding: 20px;
+    font-size: 1.2em;
+}
+div.artigo {
+    background-color: aqua;
+    min-height: 350px;
+    position: relative;
+    margin: 0px -20px 0px -20px;
+}
+section.artigo {
+    position: absolute;
+    top: 8%;
+    left: 1%;
+    max-width: 500px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px;
+}
+picture {
+    position: absolute;
+    top: 28%;
+    right: 1%;
+    width: 25%;
+    display: flex;
 }
 footer {
     background-color: black;
