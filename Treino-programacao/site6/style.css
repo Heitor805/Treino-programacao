@@ -51,28 +51,16 @@ article {
     padding: 20px;
     font-size: 1.2em;
 }
-div.artigo {
+.artigo {
     background-color: aqua;
-    min-height: 350px;
-    position: relative;
-    margin: 0px -20px 0px -20px;
+    padding: 50px;
 }
-section.artigo {
-    position: absolute;
-    top: 8%;
-    left: 1%;
-    max-width: 500px;
-    padding: 10px;
+.seçao {
+    max-width: 90%;
+    padding: 13px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 2px 3px;
-}
-picture {
-    position: absolute;
-    top: 28%;
-    right: 1%;
-    width: 25%;
-    display: flex;
 }
 footer {
     background-color: black;
