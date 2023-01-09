@@ -50,10 +50,31 @@ article {
     text-indent: 20px;
     padding: 20px;
     font-size: 1.2em;
+    position: relative;
 }
 .artigo {
     background-color: aqua;
     padding: 50px;
+    margin: 0px -20px 0px -20px;
+    border-radius: 10px;
+}
+.artigo1 {
+    background-color: rgb(255, 115, 115);
+    padding: 50px;
+    margin: 0px -20px 0px -20px;
+    border-radius: 10px;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
 }
 .seçao {
     max-width: 90%;
@@ -61,6 +82,27 @@ article {
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 2px 3px;
+}
+.container {
+    height: 350px;
+    position: relative;
+}
+.background {
+    height: 350px;
+    position: absolute;
+    background: black url('imagens/background-p.png') center center no-repeat;
+    background-size: cover;
+    margin: 0px -20px 0px -20px;
+}
+.paragrafo {
+    text-align: center;
+    text-indent: 0px;
+}
+.imagem1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 0px;
 }
 footer {
     background-color: black;
