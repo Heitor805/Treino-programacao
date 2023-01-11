@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
     margin: auto;
@@ -6,7 +7,7 @@
 }
 header {
     text-align: center;
-    background-color: rgba(127, 255, 212, 0.288);
+    background-color: #7fffd449;
     padding: 50px;
 }
 header > a {
@@ -24,7 +25,7 @@ header h1 {
     font-size: 2em;
 }
 nav {
-    background-color: rgba(83, 255, 198, 0.603);
+    background-color: #68E8E2;
     padding: 10px;
     font-size: 1.2em;
 }
@@ -37,12 +38,14 @@ nav > a {
     margin-left: 10px;
 }
 nav > a:hover {
-    background-color: rgb(49, 185, 167);
+    background-color: rgba(49, 185, 167, 0.74);
     padding: 8px;
     border-radius: 8px;
 }
 main {
     background-color: lightgray;
+    background-image: url('imagens/background-fundo.png');
+    font-family: 'Roboto', sans-serif;
 }
 article {
     max-width: 90%;
@@ -52,29 +55,23 @@ article {
     font-size: 1.2em;
     position: relative;
 }
-.artigo {
-    background-color: aqua;
-    padding: 50px;
-    margin: 0px -20px 0px -20px;
-    border-radius: 10px;
-}
-.artigo1 {
-    background-color: rgb(255, 115, 115);
-    padding: 50px;
-    margin: 0px -20px 0px -20px;
-    border-radius: 10px;
-}
 .link {
-    text-decoration: none;
-    color: black;
+    text-decoration: underline;
+    color: #61b99c;
     font-weight: bold;
     transition-duration: .5s;
 }
 .link:hover {
-    background-color: rgba(0, 0, 0, 0.747);
-    color: white;
-    padding: 3px;
+    background-color: #7fffd449;
+    color: black;
+    padding: 4px;
     border-radius: 5px;
+}
+.artigo {
+    background-color: #73E1FF;
+    padding: 50px;
+    margin: 0px -20px 0px -20px;
+    border-radius: 10px;
 }
 .seçao {
     max-width: 90%;
@@ -83,26 +80,29 @@ article {
     border-radius: 20px;
     box-shadow: 2px 2px 3px;
 }
-.container {
-    height: 350px;
-    position: relative;
-}
-.background {
-    height: 350px;
-    position: absolute;
-    background: black url('imagens/background-p.png') center center no-repeat;
-    background-size: cover;
-    margin: 0px -20px 0px -20px;
-}
-.paragrafo {
-    text-align: center;
-    text-indent: 0px;
-}
 .imagem1 {
     display: flex;
     justify-content: center;
     padding: 20px;
     padding-top: 0px;
+}
+.artigo1 {
+    background-color: #68E899;
+    padding: 50px;
+    margin: 0px -20px 0px -20px;
+    border-radius: 10px;
+}
+.background {
+    background: black url('imagens/background-p.png') center center no-repeat;
+    background-size: contain;
+    margin: 0px -20px 0px -20px;
+    padding: 30px;
+    border-radius: 10px;
+    min-height: 120px;
+}
+.paragrafo {
+    text-align: center;
+    text-indent: 0px;
 }
 footer {
     background-color: black;
