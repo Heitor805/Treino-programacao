@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
 
 * {
     margin: auto;
@@ -34,8 +35,7 @@ nav > a {
     font-weight: bold;
     transition-duration: .3s;
     color: black;
-    padding: 8px;
-    margin-left: 10px;
+    padding: 3px;
 }
 nav > a:hover {
     background-color: rgba(49, 185, 167, 0.74);
@@ -48,12 +48,21 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 article {
-    max-width: 90%;
+    max-width: 75%;
     background-color: white;
     text-indent: 20px;
     padding: 20px;
     font-size: 1.2em;
     position: relative;
+}
+.titulo {
+    background-color: rgb(199, 255, 199);
+    border-radius: 8px;
+    padding: 2px;
+    max-width: 750px;
+    min-width: 150px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
 }
 .link {
     text-decoration: underline;
@@ -100,9 +109,36 @@ article {
     border-radius: 10px;
     min-height: 120px;
 }
+.artigo2 {
+    background-color: #68E8E2;
+    padding: 50px;
+    margin: 0px -20px 0px -20px;
+    border-radius: 10px;
+}
 .paragrafo {
     text-align: center;
     text-indent: 0px;
+}
+.seçao1 {
+    max-width: 90%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px;
+}
+table {
+    border-collapse: collapse;
+}
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid black;
+}
+th, td {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
 }
 footer {
     background-color: black;
